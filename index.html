@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWR Roofing | Residential &amp; Commercial Roofing in Kyle, TX</title>
+<meta name="description" content="All Weather Restoration (AWR Roofing) — family-owned residential and commercial roofing in Kyle, TX since 2013. Insurance claim experts. Call 512-262-0050.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#161a17; --ink2:#2c332c; --mut:#5c665c; --bg:#f7f8f5; --card:#ffffff;
+  --brand:#d9480f; --brand-d:#b53a0c; --deep:#123524; --deep2:#1b4a32; --gold:#f2b01e; --line:#e6eae2;
+  --radius:14px; --shadow:0 10px 30px rgba(18,53,36,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+nav{position:sticky;top:0;z-index:50;background:rgba(18,53,36,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{color:#fff;font-family:'Sora';font-weight:800;font-size:1.2rem;text-decoration:none}
+.logo span{color:var(--gold)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{color:#d3dccf;text-decoration:none;font-weight:500;font-size:.95rem}
+.links a:hover{color:#fff}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;text-decoration:none;padding:13px 26px;border-radius:10px;border:0;cursor:pointer;font-size:1rem;transition:.2s}
+.btn:hover{background:var(--brand-d);transform:translateY(-1px)}
+.btn.nav-cta{padding:10px 20px;font-size:.92rem}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+.hero{background:linear-gradient(135deg,var(--deep) 0%,var(--deep2) 60%,#275c3d 100%);color:#fff;padding:110px 0 96px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(760px 360px at 82% 18%,rgba(242,176,30,.20),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-block;background:rgba(242,176,30,.15);color:var(--gold);font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px;border:1px solid rgba(242,176,30,.4)}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.6rem);max-width:17ch;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:1.15rem;color:#c9d4c4;max-width:58ch;margin-bottom:32px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-meta{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap;color:#a9b8a4;font-size:.92rem}
+.hero-meta strong{color:#fff}
+.strip{background:#fff;border-bottom:1px solid var(--line);padding:20px 0}
+.strip .wrap{display:flex;gap:30px;flex-wrap:wrap;align-items:center;justify-content:center}
+.strip span{font-weight:700;color:var(--ink2);font-size:.92rem;display:flex;align-items:center;gap:8px}
+.strip .dot{color:var(--brand);font-size:1.2rem}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 48px}
+.sec-head .eyebrow{color:var(--brand-d);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:10px 0 12px}
+.sec-head p{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 28px;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(18,53,36,.14)}
+.icon{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--deep),#2c6b44);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.icon svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.15rem;margin-bottom:10px}
+.card p{color:var(--mut);font-size:.96rem}
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.about h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:10px 0 16px}
+.about p{color:var(--mut);margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat b{display:block;font-family:'Sora';font-size:1.4rem;color:var(--brand-d)}
+.stat small{color:var(--mut)}
+.about-card{background:linear-gradient(150deg,var(--deep),#27603c);color:#fff;border-radius:var(--radius);padding:38px 34px;box-shadow:var(--shadow)}
+.about-card h3{color:var(--gold);margin-bottom:12px;font-size:1.3rem}
+.about-card p{color:#c9d4c4;font-size:.98rem}
+.about-card .offer{margin-top:18px;background:rgba(242,176,30,.14);border:1px solid rgba(242,176,30,.45);border-radius:10px;padding:16px;font-size:.98rem;color:#fff}
+.about-card .offer b{color:var(--gold)}
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.quote{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px}
+.stars{color:var(--gold);font-size:1.15rem;letter-spacing:.15em}
+.quote p{color:var(--ink2);font-size:.97rem;font-style:italic}
+.quote .who{margin-top:auto;font-weight:700;color:var(--deep)}
+.quote .who small{display:block;font-weight:500;color:var(--mut)}
+/* contact */
+.contact{background:linear-gradient(135deg,var(--deep),#27603c);color:#fff;text-align:center}
+.contact h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:14px}
+.contact h2 em{font-style:normal;color:var(--gold)}
+.contact p{color:#c9d4c4;max-width:54ch;margin:0 auto 30px}
+.contact-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+.big-phone{display:inline-block;font-family:'Sora';font-weight:800;font-size:clamp(1.4rem,3.8vw,2.2rem);color:#fff;text-decoration:none;background:rgba(255,255,255,.07);border:2px solid rgba(242,176,30,.55);padding:18px 40px;border-radius:16px;transition:.2s}
+.big-phone:hover{background:var(--brand);border-color:var(--brand)}
+.big-mail{display:inline-block;font-weight:700;font-size:1.1rem;color:#fff;text-decoration:none;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.3);padding:18px 34px;border-radius:16px;transition:.2s;align-self:center}
+.big-mail:hover{border-color:#fff;background:rgba(255,255,255,.14)}
+.contact .addr{color:#a9b8a4;font-size:.95rem}
+footer{background:#0c2317;color:#8ba391;padding:40px 0;font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot a{color:#c9d4c4;text-decoration:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+@media(max-width:860px){
+  .links{display:none;position:absolute;top:68px;left:0;right:0;background:#123524;flex-direction:column;padding:18px;gap:16px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .links.open{display:flex}
+  .burger{display:block}
+  .about-grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">AWR <span>Roofing</span></a>
+    <div class="links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="btn nav-cta" href="tel:+15122620050">Call 512-262-0050</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">Kyle, TX · Family Owned Since 2013</span>
+    <h1>Residential &amp; commercial roofing <em>done right.</em></h1>
+    <p class="lead">All Weather Restoration is Central Texas' family-owned roofing contractor. We treat every home like our own — and our experts navigate the insurance process so repairing your home is smooth and painless.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+15122620050">📞 Call 512-262-0050</a>
+      <a class="btn ghost" href="#services">See Our Services</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>Family</strong> owned &amp; operated</span>
+      <span><strong>Insurance</strong> claim experts</span>
+      <span><strong>Free</strong> inspections</span>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span><span class="dot">●</span> Serving Texas Since 2013</span>
+    <span><span class="dot">●</span> Residential &amp; Commercial</span>
+    <span><span class="dot">●</span> Insurance Remediation</span>
+    <span><span class="dot">●</span> Gutter Installation</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">What we do</div>
+      <h2>Roofing services, handled by seasoned pros</h2>
+      <p>From emergency repairs to full replacements — with insurance expertise built in.</p>
+    </div>
+    <div class="grid">
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Residential Roofing &amp; Repairs</h3>
+        <p>Roof replacements and repairs for homeowners — including limited lifetime architectural shingles starting at just $285 per square.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-5h6v5"/></svg></div>
+        <h3>Commercial Roofing &amp; Repairs</h3>
+        <p>Durable roofing systems for businesses, installed by a team with deep construction and insurance-remediation expertise.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 12h6M9 16h4"/><path d="M13 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M13 3v6h6"/></svg></div>
+        <h3>Insurance Claims</h3>
+        <p>We know firsthand how to navigate the insurance process to maximize results for the homeowner — permits, paperwork, and all.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V9l6-4 6 4v8"/><path d="M4 21h16"/></svg></div>
+        <h3>Gutter Installation</h3>
+        <p>Professional gutter installation to protect your new roof and foundation — the finishing touch done right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <div class="eyebrow" style="color:var(--brand-d);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem">About us</div>
+      <h2>Family first, on every roof</h2>
+      <p>All Weather Restoration LLC is the premier roofing option in Central Texas. We have proudly served Texas since 2013. As a family owned and operated company, we put family first — and we treat each home we work on as if it were our own.</p>
+      <p>Our representatives have expertise in not only construction, but insurance remediation as well. When it comes to your home, you shouldn't settle: with All Weather Restoration, you get the most professional work in the industry today.</p>
+      <div class="stats">
+        <div class="stat"><b>2013</b><small>Serving Texas since</small></div>
+        <div class="stat"><b>$285</b><small>Per square shingles</small></div>
+        <div class="stat"><b>100%</b><small>Family owned</small></div>
+      </div>
+    </div>
+    <div class="about-card rv">
+      <h3>The AWR difference</h3>
+      <p>Storm damage is stressful enough. We make repairing your home as smooth and painless as possible — walking you through insurance, city permits, and color selection step by step.</p>
+      <div class="offer"><b>Limited lifetime architectural shingles</b> starting at just $285 per square. Call for a free inspection today.</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Reviews</div>
+      <h2>What our customers say</h2>
+      <p>Real reviews from real Central Texas homeowners.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote rv">
+        <div class="stars">★★★★★</div>
+        <p>"Jay at All Weather Restoration was amazing! On short notice he was able to come to my house and fix my roof at a wonderful price and quick service! I highly recommend All Weather Restoration and Roofing to anybody looking to get their roof fixed or replaced! Thank you so much for your business, and I will definitely be a future customer."</p>
+        <div class="who">Judd Latimer<small>Roof repair customer</small></div>
+      </div>
+      <div class="quote rv">
+        <div class="stars">★★★★★</div>
+        <p>"Several of our neighbors used AWRR, so we decided to get a bid. We had hail damage, and Jay helped us navigate through the paperwork with the insurance company. The roof looks great, and they even painted the fascia (two coats) after removing our gutters."</p>
+        <div class="who">John Scott<small>Hail damage restoration</small></div>
+      </div>
+      <div class="quote rv">
+        <div class="stars">★★★★★</div>
+        <p>"Being a new homeowner I really did not know what to do after the storm. A friend and my realtor recommended these guys. They walked me through the whole process and really made it easy to get through the process of dealing with all of the minutia of dealing with the city permits to picking a color. Thanks!!"</p>
+        <div class="who">Steve Jackson<small>Storm restoration customer</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap rv">
+    <div class="eyebrow" style="color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem">Get in touch</div>
+    <h2>Ready for a roof <em>done right?</em></h2>
+    <p>Call or email for a free inspection. We'll walk you through the whole process — from insurance paperwork to final color selection.</p>
+    <div class="contact-row">
+      <a class="big-phone" href="tel:+15122620050">512-262-0050</a>
+      <a class="big-mail" href="mailto:allwrar@gmail.com">allwrar@gmail.com</a>
+    </div>
+    <p class="addr">AWR Roofing, LLC · 5500 FM 2770 Unit 105, Kyle, TX 78640</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 All Weather Restoration, LLC · Kyle, TX</span>
+    <span><a href="tel:+15122620050">512-262-0050</a> · <a href="mailto:allwrar@gmail.com">allwrar@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
